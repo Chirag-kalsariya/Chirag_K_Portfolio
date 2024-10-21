@@ -30,8 +30,12 @@ const config: DocsThemeConfig = {
     )
   },
   footer: {
-    content: <span>Portfolio website by Chirag K. using Nextra Docs Template</span>,
+    content: <span>Portfolio website by Chirag K. Using Nextra Docs Template</span>,
   },
+  feedback: {
+    content: null
+  },
+  docsRepositoryBase: "https://github.com/Chirag-kalsariya/Chirag_K_Portfolio/tree/main/"
 }
 
 export default config
