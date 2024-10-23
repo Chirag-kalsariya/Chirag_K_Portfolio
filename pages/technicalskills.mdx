@@ -1,5 +1,8 @@
 import { CustomCard } from '@/custom/customcard/customcard'
-import { Javascript, Typescript, Dart, Java, Scala, PHP } from "@/lib/svg"
+import {
+    Javascript, Typescript, Dart, Java, Scala, PHP,
+    Html, Css, Scss, Tailwind, Bootstrap
+} from "@/lib/svg"
 
 # Technical Skills
 
@@ -12,9 +15,19 @@ So, I have a good experience in different technologies. Here I listed all of the
 
 <div style={{ display: "grid", gridTemplateColumns: "auto auto", gap: "16px", marginTop: "14px" }}>
     <CustomCard iconComponent={<Javascript />} iconLabel="Javascript" cardLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
-    <CustomCard iconComponent={<Typescript />} iconLabel="Typescript" cardLink="https://www.typescriptlang.org/" />
+    <CustomCard iconComponent={<Typescript />} iconLabel="Typescript" cardLink="https://www.typescriptlang.org" />
     <CustomCard iconComponent={<Dart />} iconLabel="Dart" cardLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
     <CustomCard iconComponent={<Java />} iconLabel="Java" cardLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
     <CustomCard iconComponent={<Scala />} iconLabel="Scala" cardLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
     <CustomCard iconComponent={<PHP />} iconLabel="PHP" cardLink="https://www.scala-lang.org/" />
+</div>
+
+### Web
+
+<div style={{ display: "grid", gridTemplateColumns: "auto auto", gap: "16px", marginTop: "14px" }}>
+    <CustomCard iconComponent={<Html />} iconLabel="Html" cardLink="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" />
+    <CustomCard iconComponent={<Css />} iconLabel="Css" cardLink="https://developer.mozilla.org/en-US/docs/Web/CSS" />
+    <CustomCard iconComponent={<Scss />} iconLabel="Scss" cardLink="https://sass-lang.com" />
+    <CustomCard iconComponent={<Tailwind />} iconLabel="Tailwind" cardLink="https://tailwindcss.com" />
+    <CustomCard iconComponent={<Bootstrap />} iconLabel="Bootstrap" cardLink="https://getbootstrap.com" />
 </div>

@@ -35,7 +35,10 @@ const config: DocsThemeConfig = {
   feedback: {
     content: null
   },
-  docsRepositoryBase: "https://github.com/Chirag-kalsariya/Chirag_K_Portfolio/tree/main/"
+  search: {
+    placeholder: 'Search...',
+  },
+  docsRepositoryBase: "https://github.com/Chirag-kalsariya/Chirag_K_Portfolio/tree/main"
 }
 
 export default config
