@@ -1,7 +1,32 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from 'next/router'
+import { useConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
+  head() {
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { frontMatter } = useConfig();
+    const url = 'https://my-app.com' + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+
+    return (
+      <>
+        <title>{frontMatter.title || 'Chirag'}</title>
+        <meta
+          name="description"
+          content={frontMatter.description || 'Chirag K. - Full Stack Developer with expertise in optimizing digital solutions. Explore my portfolio, projects, and experience.'}></meta>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={frontMatter.title || 'Chirag portfolio'} />
+        <meta
+          property="og:description"
+          content={frontMatter.description || 'Chirag K. - Full Stack Developer with expertise in optimizing digital solutions. Explore my portfolio, projects, and experience.'}
+        />
+        <meta property="og:image" content={frontMatter.image || '/logo.png'} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={url} />
+      </>
+    );
+  },
   logo: (
     <>
       <svg width="24" height="24" viewBox="0 0 24 24">

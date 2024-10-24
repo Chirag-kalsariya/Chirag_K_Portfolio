@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "chirag_k_portfolio",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "My Portfolio Website. Using Nextra Docs.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
