@@ -1,6 +1,7 @@
 const meta = {
   index: "Introduction",
   technicalskills: "Technical Skills",
+  experience: "Experience"
   // another: "Another Page",
   // advanced: "Advanced (A Folder)",
   // about: {

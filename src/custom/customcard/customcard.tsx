@@ -8,6 +8,7 @@ interface CustomCardProps {
 }
 
 export const CustomCard: React.FC<CustomCardProps> = ({ iconComponent, iconLabel, cardLink }) => {
+
     return (
         <div className={styles.customCard} onClick={() => window.open(cardLink, "_blank")}>
             <div className={styles.cardContent}>

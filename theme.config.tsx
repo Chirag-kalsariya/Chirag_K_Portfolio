@@ -38,6 +38,9 @@ const config: DocsThemeConfig = {
   search: {
     placeholder: 'Search...',
   },
+  nextThemes: {
+
+  },
   docsRepositoryBase: "https://github.com/Chirag-kalsariya/Chirag_K_Portfolio/tree/main"
 }
 
