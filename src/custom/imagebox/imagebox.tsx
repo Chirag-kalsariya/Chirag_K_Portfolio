@@ -29,7 +29,7 @@ export const ImageBox: React.FC<ImageBoxProps> = ({ src, alt }) => {
                     height={720}
                     layout="responsive"
                     className={styles.image}
-                    onLoadingComplete={() => setLoading(false)}
+                    onLoad={() => setLoading(false)}
                 />
             </div>
         </div>
