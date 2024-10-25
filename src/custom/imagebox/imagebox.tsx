@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/legacy/image"
+import Image from "next/image"
 import styles from './imagebox.module.css';
 
 interface ImageBoxProps {
@@ -27,10 +27,9 @@ export const ImageBox: React.FC<ImageBoxProps> = ({ src, alt }) => {
                     alt={alt}
                     width={1280}
                     height={720}
-                    layout="responsive"
                     className={styles.image}
                     onLoad={() => setLoading(false)}
-                />
+                    sizes="100vw" />
             </div>
         </div>
     );
