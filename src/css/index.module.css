@@ -1,0 +1,34 @@
+.bantoBox {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 16px;
+    padding: 16px;
+}
+
+.bantoBoxLeft {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.bantoBoxRight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.bantoBoxRightInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 500px) {
+    .bantoBox {
+        grid-template-columns: 1fr;
+    }
+}

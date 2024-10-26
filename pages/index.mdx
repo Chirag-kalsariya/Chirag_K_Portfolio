@@ -4,9 +4,16 @@ description: Chirag kalsariya portfolio website.
 image: /images/mayin.jpg
 ---
 
+import Image from "next/image";
+import { IconCard } from '@/custom/iconcard/iconcard';
+import { CardBox } from '@/custom/cardbox/cardbox';
+import styles from "@/css/index.module.css";
+import { Instagram, X, Github, StackOverflow } from "@/lib/svg";
+import { SpaceBox } from '@/custom/spacebox/spacebox';
+
 # Introduction
 
-Welcome to the Chirag Kalsariya portfolio!
+Welcome to Chirag Kalsariya portfolio!
 
 ##
 
@@ -15,9 +22,57 @@ Welcome to the Chirag Kalsariya portfolio!
 Hi, My name is Chirag Kalsariya. 
 I am full stack developer, 
 Currently pursuing Master in Computer Science at [DePaul University, Chicago](https://www.depaul.edu/Pages/default.aspx).
+My expertise lies in creating optimized solutions for digital problems using both modern and old stable technologies.
 
-### Social link?
-TODO: Add some quick links here
+<SpaceBox height={'2rem'}/>
+
+<div className={styles.bantoBox}>
+    <div className={styles.bantoBoxLeft}>
+        <Image
+            width={300}
+            height={500}
+            src="/images/chirag-kalsariya-profile-photo.jpg"
+            alt="Chirag Kalsariya Profile Photo"
+            style={{
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                borderRadius: '12px',
+            }}
+        />
+    </div>
+    <div className={styles.bantoBoxRight}>
+        <CardBox>
+            <SpaceBox height={'2rem'}/>
+        </CardBox>
+        <div className={styles.bantoBoxRightInner}>
+            <CardBox>
+                <SpaceBox height={'2rem'}/>
+            </CardBox>
+            <CardBox>
+                <SpaceBox height={'2rem'}/>
+            </CardBox>
+        </div>
+    </div>
+</div>
+
+##
+
+### Social media and Other links
+<div style={{ display: "none"}}>  {/* this is for add search keyword */}
+    Instagram, X, Twitter, Github, Stack Overflow
+</div>
+<div style={{ display: "grid", gridTemplateColumns: "auto auto", gap: "16px", marginTop: "14px" }}>
+    <IconCard iconComponent={<Instagram />} iconLabel="Instagram" cardLink="https://www.upwork.com/freelancers/chiragkalsariya" />
+    <IconCard iconComponent={<X />} iconLabel="X / Twitter" cardLink="https://www.fiverr.com/chirag_ka" />
+    <IconCard iconComponent={<Github />} iconLabel="Github" cardLink="https://github.com/Chirag-kalsariya" />
+    <IconCard iconComponent={<StackOverflow />} iconLabel="Stack Overflow" cardLink="https://stackoverflow.com/users/20703943/chirag-kalsariya" />
+</div>
+
+##
 
 ### My academic qualification
 
@@ -26,3 +81,20 @@ TODO: Add some quick links here
 | [Master’s In Computer Science](https://www.cdm.depaul.edu/academics/Pages/MS-in-Computer-Science.aspx) | [DePaul University, Chicago, IL](https://www.depaul.edu/Pages/default.aspx) | 2024 - 2026 | Currently pursuing |
 | [Bachelor of Engineering in Computer Engineering](https://gecrajkot.ac.in/computer-engineering/) | [Government Engineering College, Rajkot](https://gecrajkot.ac.in/). Affiliated with [Gujarat Technological University](https://www.gtu.ac.in/) | 2019 - 2023 | CGPA: 7.37 |
 | 12th - High School, Stream - Science, Substream - Mathematics | [P P Savani Vidhya Bhavan](https://www.gsebeservice.com/) | 2017-2019 | Percentage: 78% |
+
+##
+
+### Hobbies
+
+* Esports
+* Cooking
+* Travelling
+* Garba
+
+##
+
+### Languages
+
+* English - Fluent
+* Hindi - Fluent or Bilingual
+* Gujarati - Native or Bilingual

@@ -1,24 +1,25 @@
 import React from "react";
-import styles from "./customcard.module.css";
+import styles from "./iconcard.module.css";
+import CardBox from "../cardbox/cardbox";
 
-interface CustomCardProps {
+interface IconCardProps {
     iconComponent: React.ReactNode;
     iconLabel: string;
     cardLink: string;
 }
 
-export const CustomCard: React.FC<CustomCardProps> = ({ iconComponent, iconLabel, cardLink }) => {
+export const IconCard: React.FC<IconCardProps> = ({ iconComponent, iconLabel, cardLink }) => {
 
     return (
-        <div className={styles.customCard} onClick={() => window.open(cardLink, "_blank")}>
+        <CardBox onClick={() => window.open(cardLink, "_blank")}>
             <div className={styles.cardContent}>
                 <div className={styles.cardIcon}>
                     {iconComponent}
                 </div>
                 <span>{iconLabel}</span>
             </div>
-        </div>
+        </CardBox>
     );
 };
 
-export default CustomCard;
+export default IconCard;
