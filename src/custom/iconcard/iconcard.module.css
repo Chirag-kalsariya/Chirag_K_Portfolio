@@ -5,6 +5,11 @@
     gap: 16px;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.cardContent:hover {
+    color: hsl(var(--nextra-primary-hue)var(--nextra-primary-saturation)45%/var(--tw-text-opacity));
 }
 
 .cardIcon {

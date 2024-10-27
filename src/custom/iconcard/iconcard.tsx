@@ -6,9 +6,10 @@ interface IconCardProps {
     iconComponent: React.ReactNode;
     iconLabel: string;
     cardLink: string;
+    showArrow?: boolean;
 }
 
-export const IconCard: React.FC<IconCardProps> = ({ iconComponent, iconLabel, cardLink }) => {
+export const IconCard: React.FC<IconCardProps> = ({ iconComponent, iconLabel, cardLink, showArrow = false }) => {
 
     return (
         <CardBox onClick={() => window.open(cardLink, "_blank")}>
@@ -16,7 +17,7 @@ export const IconCard: React.FC<IconCardProps> = ({ iconComponent, iconLabel, ca
                 <div className={styles.cardIcon}>
                     {iconComponent}
                 </div>
-                <span>{iconLabel}</span>
+                <span>{iconLabel} {showArrow && <span>&#8599;</span>}</span>
             </div>
         </CardBox>
     );

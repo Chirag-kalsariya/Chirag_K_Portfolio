@@ -8,7 +8,7 @@ import Image from "next/image";
 import { IconCard } from '@/custom/iconcard/iconcard';
 import { CardBox } from '@/custom/cardbox/cardbox';
 import styles from "@/css/index.module.css";
-import { Instagram, X, Github, StackOverflow } from "@/lib/svg";
+import { Instagram, X, Github, StackOverflow, Handshake, Linkdin } from "@/lib/svg";
 import { SpaceBox } from '@/custom/spacebox/spacebox';
 
 # Introduction
@@ -46,14 +46,27 @@ My expertise lies in creating optimized solutions for digital problems using bot
     </div>
     <div className={styles.bantoBoxRight}>
         <CardBox>
-            <SpaceBox height={'2rem'}/>
+            <div className={styles.quoteBox}>
+                <blockquote><em>Write something <strong>strong</strong> here, to make some tech.</em></blockquote>
+                <figcaption> &mdash; Chirag Kalsariya</figcaption>
+            </div>
         </CardBox>
         <div className={styles.bantoBoxRightInner}>
             <CardBox>
-                <SpaceBox height={'2rem'}/>
+                <div className={styles.profileBox}>
+                    <div className={styles.profileIcon}>
+                        <Linkdin />
+                    </div>
+                    <span>Linkdin <span>&#8599;</span></span>
+                </div>
             </CardBox>
             <CardBox>
-                <SpaceBox height={'2rem'}/>
+                <div className={styles.profileBox}>
+                    <div className={styles.profileIcon}>
+                        <Handshake />
+                    </div>
+                    <span>Handshake <span>&#8599;</span></span>
+                </div>
             </CardBox>
         </div>
     </div>
@@ -66,10 +79,10 @@ My expertise lies in creating optimized solutions for digital problems using bot
     Instagram, X, Twitter, Github, Stack Overflow
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "auto auto", gap: "16px", marginTop: "14px" }}>
-    <IconCard iconComponent={<Instagram />} iconLabel="Instagram" cardLink="https://www.upwork.com/freelancers/chiragkalsariya" />
-    <IconCard iconComponent={<X />} iconLabel="X / Twitter" cardLink="https://www.fiverr.com/chirag_ka" />
-    <IconCard iconComponent={<Github />} iconLabel="Github" cardLink="https://github.com/Chirag-kalsariya" />
-    <IconCard iconComponent={<StackOverflow />} iconLabel="Stack Overflow" cardLink="https://stackoverflow.com/users/20703943/chirag-kalsariya" />
+    <IconCard iconComponent={<Instagram />} showArrow="true" iconLabel="Instagram" cardLink="https://www.upwork.com/freelancers/chiragkalsariya" />
+    <IconCard iconComponent={<X />} showArrow="true" iconLabel="X / Twitter" cardLink="https://www.fiverr.com/chirag_ka" />
+    <IconCard iconComponent={<Github />} showArrow="true" iconLabel="Github" cardLink="https://github.com/Chirag-kalsariya" />
+    <IconCard iconComponent={<StackOverflow />} showArrow="true" iconLabel="Stack Overflow" cardLink="https://stackoverflow.com/users/20703943/chirag-kalsariya" />
 </div>
 
 ##
