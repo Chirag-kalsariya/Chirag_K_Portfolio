@@ -1,0 +1,10 @@
+.keywordDiv {
+    display: none;
+}
+
+.cardGridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 12px;
+}

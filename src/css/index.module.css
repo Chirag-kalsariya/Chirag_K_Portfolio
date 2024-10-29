@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 16px;
-    padding: 16px;
 }
 
 .bantoBoxLeft {
