@@ -11,6 +11,7 @@ const config: DocsThemeConfig = {
 
     return (
       <>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <title>{frontMatter.title || 'Chirag'}</title>
         <meta
           name="description"
