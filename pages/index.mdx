@@ -8,7 +8,7 @@ import Image from "next/image";
 import { IconCard } from '@/custom/iconcard/iconcard';
 import { CardBox } from '@/custom/cardbox/cardbox';
 import styles from "@/css/index.module.css";
-import { Instagram, X, Github, StackOverflow, Handshake, Linkdin } from "@/lib/svg";
+import { Instagram, X, Github, StackOverflow, Handshake, Linkdin, Resume } from "@/lib/svg";
 import { SpaceBox } from '@/custom/spacebox/spacebox';
 
 # Introduction
@@ -60,12 +60,12 @@ My expertise lies in creating optimized solutions for digital problems using bot
                     <span>Linkdin <span>&#8599;</span></span>
                 </div>
             </CardBox>
-            <CardBox onClick={() => window.open('https://depaul.joinhandshake.com/profiles/55914665', "_blank")}>
+            <CardBox onClick={() => window.open('/document/Resume.pdf', "_blank")}>
                 <div className={styles.profileBox}>
                     <div className={styles.profileIcon}>
-                        <Handshake />
+                        <Resume />
                     </div>
-                    <span>Handshake <span>&#8599;</span></span>
+                    <span>Resume <span>&#8599;</span></span>
                 </div>
             </CardBox>
         </div>
@@ -76,9 +76,10 @@ My expertise lies in creating optimized solutions for digital problems using bot
 
 ### Social media and Other links
 <div style={{ display: "none"}}>  {/* this is for add search keyword */}
-    Instagram, X, Twitter, Github, Stack Overflow
+    Instagram, X, Twitter, Github, Stack Overflow, Handshake
 </div>
 <div style={{ display: "grid", gridTemplateColumns: "auto auto", gap: "16px", marginTop: "14px" }}>
+    <IconCard iconComponent={<Handshake />} showArrow="true" iconLabel="Handshake" cardLink="https://depaul.joinhandshake.com/profiles/55914665" />
     <IconCard iconComponent={<Instagram />} showArrow="true" iconLabel="Instagram" cardLink="https://www.upwork.com/freelancers/chiragkalsariya" />
     <IconCard iconComponent={<X />} showArrow="true" iconLabel="X / Twitter" cardLink="https://x.com/Chirag_k_007" />
     <IconCard iconComponent={<Github />} showArrow="true" iconLabel="Github" cardLink="https://github.com/Chirag-kalsariya" />
