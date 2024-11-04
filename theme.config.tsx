@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
   head() {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
-    const url = 'https://my-app.com' + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+    const url = 'https://www.chiragkalsariya.com' + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
     return (
       <>
@@ -22,7 +22,21 @@ const config: DocsThemeConfig = {
           property="og:description"
           content={frontMatter.description || 'Chirag K. - Full Stack Developer with expertise in optimizing digital solutions. Explore my portfolio, projects, and experience.'}
         />
-        <meta property="og:image" content={frontMatter.image || '/logo.png'} />
+        <meta
+          property="og:image"
+          content={`${url}${frontMatter.image || '/chirag-kalsariya-profile-photo.png'}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={frontMatter.title || 'Chirag Portfolio'} />
+        <meta
+          name="twitter:description"
+          content={frontMatter.description || 'Chirag K. - Full Stack Developer with expertise in optimizing digital solutions. Explore my portfolio, projects, and experience.'}
+        />
+        <meta
+          name="twitter:image"
+          content={`${url}${frontMatter.image || '/chirag-kalsariya-profile-photo.png'}`}
+        />
+        <meta property="og:site_name" content="Chirag Kalsariya Portfolio" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={url} />
       </>
