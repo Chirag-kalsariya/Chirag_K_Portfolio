@@ -7,7 +7,8 @@ image: /images/chirag-kalsariya-profile-photo.jpg
 import Image from "next/image";
 import { IconCard } from '@/custom/iconcard/iconcard';
 import { CardBox } from '@/custom/cardbox/cardbox';
-import styles from "@/css/index.module.css";
+import indexStyles from "@/css/index.module.css";
+import utilsStyles from "@/css/utils.module.css";
 import { Instagram, X, Github, StackOverflow, Handshake, Linkdin, Resume } from "@/lib/svg";
 import { SpaceBox } from '@/custom/spacebox/spacebox';
 import { LineSpaceBox } from '@/custom/linespacer/linespacer';
@@ -27,8 +28,8 @@ My expertise lies in creating optimized solutions for digital problems using bot
 
 <SpaceBox height={'2rem'}/>
 
-<div className={styles.bantoBox}>
-    <div className={styles.bantoBoxLeft}>
+<div className={indexStyles.bantoBox}>
+    <div className={indexStyles.bantoBoxLeft}>
         <Image
             width={300}
             height={500}
@@ -45,25 +46,25 @@ My expertise lies in creating optimized solutions for digital problems using bot
             }}
         />
     </div>
-    <div className={styles.bantoBoxRight}>
+    <div className={indexStyles.bantoBoxRight}>
         <CardBox>
-            <div className={styles.quoteBox}>
+            <div className={indexStyles.quoteBox}>
                 <blockquote><em>Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</em></blockquote>
                 <figcaption> &mdash; @patio11</figcaption>
             </div>
         </CardBox>
-        <div className={styles.bantoBoxRightInner}>
+        <div className={indexStyles.bantoBoxRightInner}>
             <CardBox onClick={() => window.open('https://www.linkedin.com/in/chirag-kalsariya', "_blank")}>
-                <div className={styles.profileBox}>
-                    <div className={styles.profileIcon}>
+                <div className={indexStyles.profileBox}>
+                    <div className={indexStyles.profileIcon}>
                         <Linkdin />
                     </div>
                     <span>Linkdin <span>&#8599;</span></span>
                 </div>
             </CardBox>
             <CardBox onClick={() => window.open('/document/Resume.pdf', "_blank")}>
-                <div className={styles.profileBox}>
-                    <div className={styles.profileIcon}>
+                <div className={indexStyles.profileBox}>
+                    <div className={indexStyles.profileIcon}>
                         <Resume />
                     </div>
                     <span>Resume <span>&#8599;</span></span>
@@ -79,7 +80,7 @@ My expertise lies in creating optimized solutions for digital problems using bot
 <div style={{ display: "none"}}>  {/* this is for add search keyword */}
     Instagram, X, Twitter, Github, Stack Overflow, Handshake
 </div>
-<div style={{ display: "grid", gridTemplateColumns: "auto auto", gap: "16px", marginTop: "14px" }}>
+<div className={utilsStyles.cardGridBox}>
     <IconCard iconComponent={<Handshake />} showArrow="true" iconLabel="Handshake" cardLink="https://depaul.joinhandshake.com/profiles/55914665" />
     <IconCard iconComponent={<Instagram />} showArrow="true" iconLabel="Instagram" cardLink="https://www.instagram.com/chirag_kalsariya_009" />
     <IconCard iconComponent={<X />} showArrow="true" iconLabel="X / Twitter" cardLink="https://x.com/Chirag_k_007" />
@@ -113,3 +114,30 @@ My expertise lies in creating optimized solutions for digital problems using bot
 * English - Fluent
 * Hindi - Fluent or Bilingual
 * Gujarati - Native or Bilingual
+
+<LineSpaceBox/>
+
+### Support My Work
+
+If you find my projects helpful or interesting, consider supporting my work! Your support helps me continue creating and sharing open-source projects, learning new technologies, and contributing to the developer community.
+
+<SpaceBox height={'1rem'}/>
+
+<div className={utilsStyles.cardGridBox}>
+    <IconCard 
+        iconComponent={
+            <img 
+                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG5leXB3emVuM2s0azkwYmUwNG00YXU0M2NxcGd5YmdlMzdicTk4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" 
+                alt="Buy me a coffee" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            />
+        } 
+        showArrow="true" 
+        iconLabel="Buy me a coffee" 
+        cardLink="https://buymeacoffee.com/chiragkalsariya" 
+    />
+</div>
+
+<SpaceBox height={'1rem'}/>
+
+Every contribution, no matter how small, is greatly appreciated and motivates me to keep building awesome projects! ☕
