@@ -1,5 +1,5 @@
 {
-  "name": "Chirag_K_Portfolio",
+  "name": "chirag-k-portfolio",
   "private": true,
   "scripts": {
     "build": "turbo run build",
