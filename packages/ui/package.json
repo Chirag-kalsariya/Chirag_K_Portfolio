@@ -3,7 +3,22 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./*": "./src/*.tsx"
+    "./lib/*": [
+      "./src/lib/*.tsx",
+      "./src/lib/*.ts"
+    ],
+    "./components/*": [
+      "./src/components/*.tsx",
+      "./src/components/*.ts"
+    ],
+    "./components/*/*": [
+      "./src/components/*/*.tsx",
+      "./src/components/*/*.ts"
+    ],
+    "./components/*/*/*": [
+      "./src/components/*/*/*.tsx",
+      "./src/components/*/*/*.ts"
+    ]
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -20,7 +35,10 @@
     "typescript": "5.9.2"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
     "react": "^19.2.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.1"
   }
 }
