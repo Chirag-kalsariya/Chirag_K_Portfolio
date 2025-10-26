@@ -35,7 +35,7 @@ export default function Home() {
             center.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row px-2">
           <Button variant="default">
             <Image
               className="dark:invert"
