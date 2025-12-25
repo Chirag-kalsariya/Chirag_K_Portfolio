@@ -1,26 +1,36 @@
-# About Repo
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Chirag Kalsariya Portfolio Website. Using Nextra Docs.
+## Getting Started
 
-# Documentation
+First, run the development server:
 
-This repo uses [Nextra Docs](https://nextra.vercel.app/) template. For more details please visit [Nextra Docs](https://nextra.vercel.app/docs).
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-However, I added some custom components and installed shadcn compoenents. So I am providing
-few information how you can edit this site.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Edit page content
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-All page mdx files are in `pages` directory. To edit page content, simply open the file in VS Code or any text editor and replace the content with your own.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-You can use react components in your mdx files. For example, I have written `<SpaceBox height={'1.5rem'} />` in my `about.mdx` file.
+## Learn More
 
-Also you can write simple html tags in your mdx files.
+To learn more about Next.js, take a look at the following resources:
 
-## Edit Header and Footer
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-For header and footer, you can edit the file `theme.config.tsx`. For more details please visit [Nextra Docs Theme Configuration](https://nextra.site/docs/docs-theme/theme-configuration).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Edit Sidebar
+## Deploy on Vercel
 
-For sidebar, you can edit the file `_meta.tsx`. For more details please visit [Nextra Docs Page Configuration](https://nextra.site/docs/docs-theme/page-configuration).
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

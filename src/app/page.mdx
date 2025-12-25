@@ -1,0 +1,143 @@
+---
+title: Chirag K. Portfolio
+description: Chirag kalsariya portfolio. I am full stack developer, Currently pursuing Master in Computer Science at DePaul University, Chicago. My expertise lies in creating optimized solutions for digital problems using both modern and old stable technologies.
+image: /images/chirag-kalsariya-profile-photo.jpg
+sidebarTitle: Introduction
+---
+
+import Image from "next/image";
+import { Instagram, X, Github, StackOverflow, Handshake, Linkdin, Resume, ArrowUpRight } from "@/components/svg";
+import { SpaceBox } from '@/components/custom/space-box';
+import { Separator } from "@/components/ui/separator";
+import { Card, CardContent } from "@/components/ui/card";
+import { IconBox } from '@/components/custom/icon-box';
+import Link from "next/link";
+import { bluerDataURL } from "@/lib/const";
+
+# Introduction
+
+Welcome to Chirag Kalsariya portfolio!
+
+<Separator className="mt-8" />
+
+### About me
+
+Hi, My name is Chirag Kalsariya. 
+I am full stack developer, 
+Currently pursuing Master in Computer Science at [DePaul University, Chicago](https://www.depaul.edu/Pages/default.aspx).
+My expertise lies in creating optimized solutions for digital problems using both modern and old stable technologies.
+
+<SpaceBox height={'2rem'}/>
+
+<div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-4">
+    <div className="relative w-full pt-[56.25%] min-h-62.5 overflow-hidden rounded-xl shadow-md bg-card">
+        <Image
+            width={300}
+            height={500}
+            src="/images/chirag-kalsariya-profile-photo.jpg"
+            alt="Chirag Kalsariya Profile Photo"
+            className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
+            placeholder="blur"
+            blurDataURL={bluerDataURL}
+            priority
+        />
+    </div>
+    <div className="grid grid-cols-1 gap-4">
+        <Card>
+            <CardContent className="h-full flex items-center justify-center flex-col gap-3 text-center">
+                <blockquote><em>Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</em></blockquote>
+                <figcaption> &mdash; @patio11</figcaption>
+            </CardContent>
+        </Card>
+        <div className="grid grid-cols-2 gap-4">
+            <Link href="https://www.linkedin.com/in/chirag-kalsariya" target="_blank" rel="noopener noreferrer">
+                <Card className="h-full cursor-pointer transition-colors hover:border-link/50 group">
+                    <CardContent className="w-full h-full flex items-center justify-center flex-col gap-3 text-lg font-medium">
+                        <div className="mt-1.5 w-10 h-10 flex items-center justify-center overflow-hidden">
+                            <Linkdin className="w-full h-full" />
+                        </div>
+                        <span className="group-hover:text-link transition-colors flex items-center gap-1">LinkedIn <ArrowUpRight className="w-4 h-4" /></span>
+                    </CardContent>
+                </Card>
+            </Link>
+            <Link href="/document/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Card className="h-full cursor-pointer transition-colors hover:border-link/50 group">
+                    <CardContent className="w-full h-full flex items-center justify-center flex-col gap-3 text-lg font-medium">
+                        <div className="mt-1.5 w-10 h-10 flex items-center justify-center overflow-hidden">
+                            <Resume className="w-full h-full" />
+                        </div>
+                        <span className="group-hover:text-link transition-colors flex items-center gap-1">Resume <ArrowUpRight className="w-4 h-4" /></span>
+                    </CardContent>
+                </Card>
+            </Link>
+        </div>
+    </div>
+</div>
+
+<Separator className="my-8" />
+
+### Social media and Other links
+<div style={{ display: "none" }}>  {/* this is for add search keyword */}
+    Instagram, X, Twitter, Github, Stack Overflow, Handshake
+</div>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
+    <IconBox iconComponent={<Handshake className="w-full h-full" />} showArrow={true} iconLabel="Handshake" cardLink="https://depaul.joinhandshake.com/profiles/55914665" />
+    <IconBox iconComponent={<Instagram className="w-full h-full" />} showArrow={true} iconLabel="Instagram" cardLink="https://www.instagram.com/chirag_kalsariya_009" />
+    <IconBox iconComponent={<X className="w-full h-full" />} showArrow={true} iconLabel="X / Twitter" cardLink="https://x.com/Chirag_k_007" />
+    <IconBox iconComponent={<Github className="w-full h-full" />} showArrow={true} iconLabel="Github" cardLink="https://github.com/Chirag-kalsariya" />
+    <IconBox iconComponent={<StackOverflow className="w-full h-full" />} showArrow={true} iconLabel="Stack Overflow" cardLink="https://stackoverflow.com/users/20703943/chirag-kalsariya" />
+</div>
+
+<Separator className="my-8" />
+
+### My academic qualification
+
+| Course Name        | School/University Name |   Time | Grade |
+| :------------ | :---------: | :----------: | ----------: |
+| [Master's In Computer Science](https://www.cdm.depaul.edu/academics/Pages/MS-in-Computer-Science.aspx) | [DePaul University, Chicago, IL](https://www.depaul.edu/Pages/default.aspx) | 2024 - 2026 | Currently pursuing |
+| [Bachelor of Engineering in Computer Engineering](https://gecrajkot.ac.in/computer-engineering/) | [Government Engineering College, Rajkot](https://gecrajkot.ac.in/). Affiliated with [Gujarat Technological University](https://www.gtu.ac.in/) | 2019 - 2023 | CGPA: 7.37 |
+| 12th - High School, Stream - Science, Substream - Mathematics | [P P Savani Vidhya Bhavan](https://www.gsebeservice.com/) | 2017-2019 | Percentage: 78% |
+
+<Separator className="my-8" />
+
+### Hobbies
+
+* Esports
+* Cooking
+* Travelling
+* Garba
+
+<Separator className="my-8" />
+
+### Languages
+
+* English - Fluent
+* Hindi - Fluent or Bilingual
+* Gujarati - Native or Bilingual
+
+<Separator className="my-8" />
+
+### Support My Work
+
+If you find my projects helpful or interesting, consider supporting my work! Your support helps me continue creating and sharing open-source projects, learning new technologies, and contributing to the developer community.
+
+<SpaceBox height={'1rem'}/>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
+    <IconBox 
+        iconComponent={
+            <img 
+                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG5leXB3emVuM2s0azkwYmUwNG00YXU0M2NxcGd5YmdlMzdicTk4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TDQOtnWgsBx99cNoyH/giphy.gif" 
+                alt="Buy me a coffee" 
+                className="w-full h-full object-cover"
+            />
+        } 
+        showArrow={true} 
+        iconLabel="Buy me a coffee" 
+        cardLink="https://buymeacoffee.com/chiragkalsariya" 
+    />
+</div>
+
+<SpaceBox height={'1rem'}/>
+
+Every contribution, no matter how small, is greatly appreciated and motivates me to keep building awesome projects! ☕
