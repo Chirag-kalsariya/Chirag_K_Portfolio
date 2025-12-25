@@ -4,7 +4,6 @@ import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
 import { Inter } from "next/font/google"
-import BannerComponent from '@/components/layout/banner'
 import FooterComponent from '@/components/layout/footer'
 import NavbarComponent from '@/components/layout/navbar'
 import { Analytics } from '@vercel/analytics/react';
@@ -25,7 +24,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </Head>
       <body>
         <Layout
-          banner={BannerComponent()}
           navbar={NavbarComponent()}
           footer={FooterComponent()}
           search={<SearchComponent />}
