@@ -1,12 +1,9 @@
-import React from "react";
+import React from 'react';
 
 interface SpaceBoxProps {
-    height: string;
+	height: string;
 }
 
 export const SpaceBox: React.FC<SpaceBoxProps> = ({ height }) => {
-
-    return (
-        <div style={{ height: height }}></div>
-    );
+	return <div style={{ height: height }}></div>;
 };

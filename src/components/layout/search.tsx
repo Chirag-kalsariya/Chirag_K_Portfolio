@@ -1,9 +1,7 @@
-'use client'
+'use client';
 
-import { Search } from 'nextra/components'
+import { Search } from 'nextra/components';
 
 export default function SearchComponent() {
-    return (
-        <Search placeholder="Search..." />
-    )
-};
+	return <Search placeholder="Search..." />;
+}
